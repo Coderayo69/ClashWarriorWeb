@@ -1,0 +1,12 @@
+# Allow all web crawlers to access the main site
+User-agent: *
+Allow: /
+
+# Block access to backend API routes, private data, and other non-public directories
+Disallow: /api/
+Disallow: /admin/
+Disallow: /user/profile/
+Disallow: /auth/
+
+# Sitemap location
+Sitemap: https://yourwebsite.com/sitemap.xml
